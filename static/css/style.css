@@ -1,0 +1,394 @@
+/* static/css/style.css - Improved version with better typography */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 16px; /* Base font size increased for better readability */
+}
+
+.container-fluid {
+    max-width: 1400px;
+    padding: 0;
+    height: 100vh;
+}
+
+.row {
+    height: 100%;
+    margin: 0;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #f0f2f6;
+    padding: 20px;
+    height: 100vh;
+    border-right: 1px solid #ddd;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+    position: fixed;
+    left: 0;
+    width: 25%;
+    overflow-y: auto;
+}
+
+.sidebar h3 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 22px; /* Increased heading size */
+}
+
+.sidebar h4 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 600; /* Increased font weight for better visibility */
+    font-size: 18px; /* Increased heading size */
+    color: #2c3e50; /* Darker color for better contrast */
+}
+
+.faq-btn, .human-btn {
+    display: block;
+    width: 100%;
+    padding: 12px 15px; /* Slightly increased padding */
+    margin-bottom: 12px; /* Increased margin for better spacing */
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    font-size: 15px; /* Slightly increased font size */
+    font-weight: 500; /* Medium weight for better visibility */
+}
+
+.faq-btn:hover, .human-btn:hover {
+    background-color: #e6f2ff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.human-btn {
+    background-color: #ff6b6b;
+    color: white;
+    font-weight: 600; /* Bold for emphasis */
+}
+
+.human-btn:hover {
+    background-color: #ff5252;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 20px 30px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%; /* Offset for fixed sidebar */
+    width: 75%;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-weight: 700;
+    color: #2c3e50;
+    font-size: 30px; /* Increased heading size */
+    letter-spacing: -0.5px; /* Slight letter spacing adjustment */
+}
+
+.chat-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px); /* Adjust based on header height */
+}
+
+.chat-section h3 {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 22px; /* Increased heading size */
+    color: #2c3e50; /* Darker color for better contrast */
+}
+
+.chat-section p {
+    color: #555; /* Slightly darker color for better readability */
+    margin-bottom: 20px;
+    font-size: 16px; /* Increased font size */
+}
+
+.chat-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    /* Push all messages up and current messages to bottom */
+    justify-content: flex-start;
+}
+
+.message {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.user-message {
+    align-items: flex-end;
+}
+
+.assistant-message {
+    align-items: flex-start;
+}
+
+.message-content {
+    padding: 12px 18px; /* Increased padding for more space */
+    border-radius: 18px;
+    max-width: 80%;
+    line-height: 1.5; /* Improved line height for readability */
+}
+
+.user-message .message-content {
+    background-color: #007bff;
+    color: #fff;
+    border-bottom-right-radius: 5px;
+    font-size: 15px; /* Increased font size */
+    font-weight: 500; /* Medium weight for better visibility */
+}
+
+.assistant-message .message-content {
+    background-color: #f0f2f6;
+    color: #333;
+    border-bottom-left-radius: 5px;
+    font-size: 15px; /* Increased font size */
+}
+
+/* Format markdown content within assistant messages */
+.assistant-message .message-content .markdown-body {
+    background-color: transparent;
+    font-size: 15px; /* Increased font size */
+}
+
+.assistant-message .message-content .markdown-body h2 {
+    font-size: 20px; /* Increased heading size */
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-weight: 600; /* Increased font weight */
+    color: #2c3e50; /* Darker color for better contrast */
+}
+
+.assistant-message .message-content .markdown-body ul, 
+.assistant-message .message-content .markdown-body ol {
+    padding-left: 20px;
+}
+
+.assistant-message .message-content .markdown-body li {
+    margin-bottom: 6px; /* Add space between list items */
+}
+
+/* Number styling for ordered lists */
+.assistant-message .message-content .markdown-body ol li::marker {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Bullet styling for unordered lists */
+.assistant-message .message-content .markdown-body ul li::marker {
+    color: #2c3e50;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    background-color: #f9f9f9;
+    position: sticky;
+    bottom: 0;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 14px 18px; /* Increased padding */
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 15px; /* Increased font size */
+    background-color: #f0f2f6;
+}
+
+#send-btn {
+    margin-left: 10px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+#send-btn:hover {
+    background-color: #0069d9;
+}
+
+/* Adding a typing indicator */
+.typing-indicator {
+    display: flex;
+    padding: 10px 15px;
+    background-color: #f0f2f6;
+    border-radius: 18px;
+    margin-bottom: 15px;
+    width: fit-content;
+    border-bottom-left-radius: 5px;
+}
+
+.typing-indicator span {
+    height: 10px;
+    width: 10px;
+    background-color: #999;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 2px;
+    animation: bounce 1.5s infinite ease-in-out;
+}
+
+.typing-indicator span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    0%, 80%, 100% { 
+        transform: translateY(0);
+    }
+    40% { 
+        transform: translateY(-10px);
+    }
+}
+
+/* High contrast mode for improved readability */
+@media (prefers-contrast: more) {
+    body {
+        color: #000;
+    }
+    
+    .faq-btn, .human-btn {
+        border: 1px solid #888;
+    }
+    
+    .chat-section p {
+        color: #000;
+    }
+    
+    .assistant-message .message-content {
+        color: #000;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        font-size: 15px; /* Slightly smaller base font on mobile */
+    }
+    
+    .sidebar {
+        position: static;
+        height: auto;
+        width: 100%;
+        overflow-y: visible;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+    }
+    
+    .chat-section {
+        height: calc(100vh - 350px); /* Adjust based on sidebar height */
+    }
+    
+    .message-content {
+        max-width: 90%;
+    }
+    
+    .row {
+        flex-direction: column;
+    }
+    
+    .header h1 {
+        font-size: 24px; /* Smaller heading on mobile */
+    }
+    
+    .chat-section h3 {
+        font-size: 20px;
+    }
+}
+.assistant-message .message-content .markdown-body ul,
+.assistant-message .message-content .markdown-body ol {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.assistant-message .message-content .markdown-body li {
+    margin-bottom: 8px;
+    color: #333; /* Ensure text is dark */
+}
+
+/* Specifically target the bullet points */
+.assistant-message .message-content .markdown-body ul li {
+    color: #333; /* Dark text color for list items */
+    position: relative;
+    list-style-type: disc; /* Ensure bullet style is visible */
+}
+
+/* Make bullet points stand out more */
+.assistant-message .message-content .markdown-body ul li::marker {
+    color: #007bff; /* Blue bullet points for visibility */
+    font-size: 1.2em; /* Slightly larger bullets */
+}
+
+/* For key features sections */
+.message-content strong {
+    color: #2c3e50; /* Darker color for headings and strong text */
+    font-weight: 600;
+}
+
+/* Ensure all text in the list items is visible */
+.assistant-message .message-content .markdown-body ul li span,
+.assistant-message .message-content .markdown-body ul li p {
+    color: #333 !important; /* Force dark color for all nested text */
+}
+
+/* Make sure the bullet points themselves aren't transparent */
+.assistant-message .message-content .markdown-body ul {
+    list-style-type: disc;
+    color: #333;
+}
+
+/* Additional insurance-specific styling for feature lists */
+.assistant-message .message-content .markdown-body ul li:after {
+    content: "";
+    display: block;
+    clear: both;
+}

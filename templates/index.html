@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsuranceBot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown.min.css">
+    <!-- Add Bootstrap for layout -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 sidebar">
+                <div class="faq-section">
+                    <h4>Frequently Asked Questions</h4>
+                    <button class="faq-btn" data-faq-type="health">Tell me about health insurance</button>
+                    <button class="faq-btn" data-faq-type="claim">How do I file a claim?</button>
+                    <button class="faq-btn" data-faq-type="premium">What affects premium costs?</button>
+                </div>
+                <div class="human-section">
+                    <h4>Need more help?</h4>
+                    <button class="human-btn" data-faq-type="human">Talk to a Human Agent</button>
+                </div>
+            </div>
+            
+            <!-- Main content -->
+            <div class="col-md-9 main-content">
+                <div class="header">
+                    <h1>Insurance Policy Assistant</h1>
+                </div>
+                
+                <div class="chat-section">
+                    <h3>Chat with our Insurance Assistant</h3>
+                    <p>Ask any questions about our insurance policies, coverage options, premiums, or claims processes.</p>
+                    
+                    <div class="chat-container" id="chat-container">
+                        <!-- Chat messages will be displayed here -->
+                    </div>
+                    
+                    <div class="input-container">
+                        <input type="text" id="user-input" placeholder="Type your question here...">
+                        <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.2/marked.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

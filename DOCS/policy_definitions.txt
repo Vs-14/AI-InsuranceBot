@@ -1,0 +1,81 @@
+INSURANCE TERMINOLOGY GLOSSARY
+
+GENERAL INSURANCE TERMS:
+
+Actuary: Professional who analyzes risk and uncertainty using mathematics, statistics, and financial theory.
+
+Adjuster: Insurance representative who investigates claims, determines coverage, and recommends settlement amounts.
+
+Beneficiary: Person or entity designated to receive the insurance benefits upon the insured's death or when specified conditions are met.
+
+Claim: Formal request to the insurance company for coverage or compensation for a covered loss.
+
+Deductible: Amount the policyholder must pay out-of-pocket before insurance coverage begins.
+
+Endorsement (Rider): Document that modifies a policy, adding or removing coverage.
+
+Exclusion: Specific condition, circumstance, or situation not covered by the insurance policy.
+
+Indemnity: Principle where the insurer compensates the insured for a loss, restoring them to the same financial position they were in before the loss.
+
+Premium: Amount paid by the policyholder to the insurer for coverage, typically on a monthly, quarterly, semi-annual, or annual basis.
+
+Underwriting: Process of evaluating risk to determine policy issuance and premium amount.
+
+HEALTH INSURANCE TERMS:
+
+Coinsurance: Percentage of costs shared between insurer and insured after the deductible is met.
+
+Copayment (Copay): Fixed amount paid by the insured for covered services.
+
+Explanation of Benefits (EOB): Statement from insurer explaining what was covered for a medical claim.
+
+Formulary: List of prescription drugs covered by the health insurance plan.
+
+In-Network Provider: Healthcare provider who has contracted with the insurance company to provide services at negotiated rates.
+
+Out-of-Pocket Maximum: Limit on what the insured must pay for covered services in a policy period, after which the insurer pays 100%.
+
+Prior Authorization: Requirement to get approval from the insurer before certain services are provided.
+
+LIFE INSURANCE TERMS:
+
+Cash Value: Savings component in permanent life insurance policies that grows over time.
+
+Death Benefit: Amount paid to beneficiaries upon the insured's death.
+
+Surrender Value: Amount a policyholder receives if they voluntarily terminate a permanent life insurance policy before maturity or death.
+
+Term Life Insurance: Life insurance providing coverage for a specified term with no cash value component.
+
+Underwriting: Process of evaluating an applicant's risk factors to determine insurability and premium rates.
+
+Whole Life Insurance: Permanent life insurance providing coverage for the insured's entire life with a cash value component.
+
+AUTO INSURANCE TERMS:
+
+At-Fault Accident: Collision where the insured is determined to be responsible.
+
+Comprehensive Coverage: Insurance for damage to the insured vehicle not caused by collision (e.g., theft, vandalism, natural disasters).
+
+Collision Coverage: Insurance for damage to the insured vehicle resulting from a collision.
+
+Liability Coverage: Insurance that pays for damage or injury the policyholder causes to others.
+
+No-Fault Insurance: System where each insurer pays for their own insured's losses, regardless of fault.
+
+Totaled Vehicle: Vehicle where repair costs exceed a certain percentage of its value.
+
+HOME INSURANCE TERMS:
+
+Actual Cash Value: Replacement cost minus depreciation.
+
+Dwelling Coverage: Insurance for the main structure of the home.
+
+Liability Coverage: Protection against lawsuits for property damage or injuries caused by the insured.
+
+Personal Property Coverage: Insurance for belongings inside and outside the home.
+
+Replacement Cost: Amount needed to replace damaged property with new items of similar kind and quality.
+
+Umbrella Policy: Additional liability insurance that provides protection beyond existing policy limits.
